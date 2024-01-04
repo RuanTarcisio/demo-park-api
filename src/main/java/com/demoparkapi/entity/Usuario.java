@@ -1,4 +1,4 @@
-package com.mballem.demoparkapi.entity;
+package com.demoparkapi.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -16,7 +16,7 @@ public class Usuario implements Serializable {
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = 6815621609046500797L;
+	private static final long serialVersionUID = 1L;
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -27,7 +27,7 @@ public class Usuario implements Serializable {
     private String password;
     @Enumerated(EnumType.STRING)
     @Column(name = "role", nullable = false, length = 25)
-    private Role role;
+    private Role role = Role.ROLE_CLIENTE;
 
     @Column(name = "data_criacao")
     private LocalDateTime dataCriacao;

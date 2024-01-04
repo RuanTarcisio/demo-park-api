@@ -1,4 +1,4 @@
-package com.mballem.demoparkapi;
+package com.demoparkapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
