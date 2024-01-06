@@ -14,7 +14,6 @@ import com.demoparkapi.repository.UsuarioRepository;
 
 import lombok.RequiredArgsConstructor;
 
-
 @RequiredArgsConstructor
 @Service
 public class UsuarioService {
